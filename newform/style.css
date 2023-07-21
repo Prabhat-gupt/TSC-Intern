@@ -1,0 +1,64 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(50deg,#5858e2, #f802ff80);
+    overflow: hidden;
+}
+.container{
+    text-align: center;
+    background-color: white;
+    margin: 5rem 38rem;
+    border-radius: 9px;
+}
+h2{
+    margin: 0px 0px 65px;
+    position: relative;
+    top: 35px;
+}
+input{
+    /* width: 100%; */
+    padding: 12px 29px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+}
+label{
+    position: relative;
+    top: 13px;
+    right: 71px;
+}
+
+.forgot label{
+    position: relative;
+    top: -10px;
+    left: 68px;
+    font-size: 12px;
+}
+
+button{
+    width: 213px;
+    height: 27px;
+    border-radius: 20px;
+    border: none;
+    background-image: linear-gradient(to right,rgb(39 47 196 / 29%),#0000ff8c, #ae2ac8ad);
+    color: white;
+}
+img{
+    height: 30px;
+    padding: 0 1px 1px;
+    margin: -22px 0px 0px;
+}
+.fa-user::before {
+    position: relative;
+    content: "";
+    left: 17px;
+}
+.fa-lock:before {
+    content: "\f023";
+    position: relative;
+    left: 17px;
+}

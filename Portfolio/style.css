@@ -1,0 +1,191 @@
+
+@media (max-width:500px){
+    .userPara {
+        width: 90vw;
+    }
+    .userImage img {
+        height: 17rem;
+        border-radius: 16rem;
+        margin-top: 5rem;
+    }
+    .userIntro {
+        display: flex;
+        margin: 2% 51%;
+        /* border: 2px solid; */
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+.headerData{
+    /* border: 2px solid; */
+    width: 100%;
+    text-align: end;
+}
+.userInfoName{
+    margin-bottom: -22px;
+}
+ul{
+    list-style-type: none;
+    /* margin: 7px 7rem;
+    padding: 0px;
+    text-align: end; */
+    overflow: hidden;
+}
+li{
+    display: inline-block;
+    font-weight: bold;
+    padding: 1rem;
+}
+.userIntro{
+    display: flex;
+    /* margin: 3% 28%; */
+    /* border: 2px solid; */
+    width: 100%;
+    justify-content: space-around;
+}
+.userPara{
+    width: 43vw;
+}
+.userInfo{
+    /* position: relative; */
+    /* right: 15rem; */
+    font-size: 34px;
+}
+.userpara p{
+    text-align: justify;
+}
+.downloadButton button{
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    height: 2.5rem;
+}
+.userImage{
+    /* padding: 2rem;
+    margin-left: 103px;
+    margin-top: 0px; */
+}
+.userImage img{
+    height: 26rem;
+    border-radius: 16rem;
+    margin-top: 5rem;
+}
+.userPost{
+    background-color: #edf7fa;
+    padding: 0.002rem;
+    margin-top: 4rem;   
+}
+table{
+    /* width: 50vw;
+    margin: 2rem 24rem; */
+}
+
+table,td,tr{
+    border: none;
+}
+.post1{
+    margin: 0rem 1rem;
+    background-color: white;
+    padding: 1px 15px;
+    /* width: 38vw; */
+
+}
+.post_design{
+    display: flex;
+}
+.designPattern{
+    position: relative;
+    left: 63px;
+    font-size: 1.3rem;
+}
+.vLine{
+    border: 1px solid #00000033;
+    height: 22px;
+    position: relative;
+    left: 2vw;
+}
+
+
+.dashboard{
+    /* border: 2px solid; */
+
+    font-size: 22px;
+    margin-bottom: 3rem;
+}
+.dashboard_image img{
+    width: 23rem;
+    object-fit: cover;
+    height: 15rem;
+    border-radius: 10px;
+    border:none;
+}
+.dashboardPara p{
+    padding-bottom: 8px;
+}
+.year_dashboard{
+    display: flex;
+}
+.featureimages{
+    width: 37%;
+}
+
+.featureWork{
+    border: none;
+}
+.featureWorktable{
+    /* border: 2px solid; */
+    width: 100%;
+    /* margin-left: 5rem; */
+    /* margin-right: 26rem; */
+    padding: 0px 71px;
+}
+.title_feature{
+    font-size: 2rem;
+    height: 5rem;
+    font-weight: bold;
+}
+.data{
+    border: 2px solid black;
+    width: 13vh;
+    border-radius: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+}
+.date{
+    font-size: 1.3rem;
+}
+.between_data_board{
+    padding: 10px;
+}
+
+.post1_para p{
+    font-size: 1.3rem;
+}
+
+.data_dashboard{
+    color: #8998a7;
+}
+.line{
+    width: 100%;
+    background-color: #a6a6a65e;
+    height: 1px;
+    margin: 1rem;
+}
+.footer{
+    margin: 8% 28%;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    margin: 0rem 13rem;
+}
+.icons img{
+    width: 2rem;
+    object-fit: contain;
+    margin: 1rem;
+}
+
+

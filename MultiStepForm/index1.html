@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Step Form</title>
+  <!-- Add Bootstrap CSS link here -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Add custom CSS styles here -->
+  <style>
+    .multi-step-form .step:not(.step-1) {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="multiStepForm" class="multi-step-form" novalidate>
+      <div class="step step-1">
+        <h2>Step 1</h2>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <button type="button" class="btn-next">Next</button>
+      </div>
+
+      <div class="step step-2">
+        <h2>Step 2</h2>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <button type="button" class="btn-prev">Previous</button>
+        <button type="button" class="btn-next">Next</button>
+      </div>
+
+      <div class="step step-3">
+        <h2>Step 3</h2>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" required>
+        <button type="button" class="btn-prev">Previous</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Add Bootstrap JS and jQuery links here -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Add custom JavaScript here -->
+  <script>
+    $(document).ready(function() {
+      const form = $('#multiStepForm');
+      const steps = form.find('.step');
+      let currentStep = 0;
+
+      function showStep(stepIndex) {
+        steps.hide();
+        steps.eq(stepIndex).show();
+      }
+
+      $('.btn-next').click(function() {
+        const isValid = form[0].checkValidity();
+        if (!isValid) {
+          form.addClass('was-validated');
+          return;
+        }
+        form.removeClass('was-validated');
+        currentStep++;
+        showStep(currentStep);
+      });
+
+      $('.btn-prev').click(function() {
+        currentStep--;
+        showStep(currentStep);
+      });
+
+      form.submit(function(event) {
+        event.preventDefault();
+        const isValid = form[0].checkValidity();
+        if (!isValid) {
+          form.addClass('was-validated');
+          return;
+        }
+        // Add your form submission logic here
+        // For example, you can use AJAX to submit the data to the server
+        // and show a success message to the user
+        alert('Form submitted successfully!');
+        // Reset the form after successful submission
+        form[0].reset();
+        currentStep = 0;
+        showStep(currentStep);
+      });
+    });
+  </script>
+</body>
+</html>

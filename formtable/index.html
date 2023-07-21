@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormTable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="">
+        <div class="container">
+        <table>
+            <tr>
+                <th style="border: none;"></th>
+                <th style="border: none;">Pizza Shop 2.0</th>
+                <!-- <th style="border: none;"></th> -->
+            </tr>
+
+            <tr>
+                <th>Name</th>
+                <td><input type="text" style="position: relative;
+                    right: 104px;"></td>
+            </tr>
+
+            <tr>
+                <th>Pizza Topping</th>
+                <td style="text-align: start;">
+                    <ul style="list-style-type:circle; font-size: 20px; margin:0px -7px; ">
+                        <input type="radio" name="" id=""> <label for="">Supreme</label>
+                        <br>
+                        <input type="radio" name="" id=""> <label for="">Vegetarian</label>
+                        <br>
+                        <input type="radio" name="" id=""> <label for="">Hawaiian</label>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Pizza Sauce</th>
+                <td>
+                    <select name="" id="" style="
+                    position: relative;
+                    right: 148px;
+                ">
+                        <option value="">Tomato</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Option Extra</th>
+                <td>
+                    <ul style="list-style-type:square; font-size: 20px; margin:0px -7px">
+                        <div class="listI" style="display: flex; position: relative; right: 37px">
+                        <div class="li1" style="margin: 0px 5px;"><input type="checkbox" name="" id=""> <label for="">Extra Cheese</label> </div>
+                        <div class="li2"><input type="checkbox" name="" id=""> <label for="">Gluten Free Base</label> </li></div>
+                    </div>
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th style="border: none;" colspan="2"> <label for="" style="position: relative; right: 190px">Delivery Instruction :</label> <textarea name="" id="" cols="70" rows="10"></textarea></th> 
+                
+            
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div class="button">
+                        Send My Order
+                    </div>
+                    
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>

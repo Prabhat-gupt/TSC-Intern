@@ -1,0 +1,42 @@
+.container{
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    width: 34%;
+    padding: 10px;
+    margin-top: 8%;
+    border-radius: 1rem;
+
+}
+th{
+    /* width: 10px; */
+}
+table,tr,td,th{
+    border: 2px solid black;
+}
+/* li::before{
+    content: '\00b7';
+    font-size: 100px;
+} */
+li{
+    text-align: start;
+}
+.option{
+    list-style-type: circle;
+    /* display: inline-block; */
+    margin: 8px;
+}
+.button{
+    border: 2px solid;
+    width: 120px;
+    margin: 2px 7px;
+    border-radius: 5px;
+}
+section{
+    position: relative;
+    right: 118px;   
+}
+/* input{
+    position: relative;
+    right: 65px;
+} */

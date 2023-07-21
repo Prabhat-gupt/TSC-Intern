@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+    // var form = document.getElementById("fillform");
+    // form.addEventListener('submit', validation);
+    function validation(event){
+        var paswd= document.getElementById("pswd").value;
+        if(paswd.length===0){
+            document.getElementById("message").innerHTML = "**Fill the password"; 
+            event.preventDefault();
+            return false;
+        }
+        if(paswd.length<8){
+            document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters"; 
+            event.preventDefault();
+            return false;
+        }else{
+            document.write("Welcome");
+            event.preventDefault();
+            return true;
+        }
+    }
+</script>
+<body>
+    <section>
+        <div class="container">
+            <form onclick="return validation()">
+                <h2>Login</h2>
+                <div class="username">
+                    <label for="name">Username</label>
+                    <br>
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" name="name" placeholder="Type your username" id="">
+                </div>
+
+                <div class="password">
+                    <label for="password">Password</label>
+                    <br>
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" id="pswd" name="password" placeholder="Type your password">
+                    <br>
+                    <span id = "message" style="color:red"> </span> <br><br>  
+                </div>
+
+                <div class="forgot">
+                    <label for="">forgot password?</label>
+                </div>
+                
+                <button type="button">LOGIN</button>
+
+                <div>
+                    <p style="margin: 43px;">or Sign Up Using</p>
+                </div>
+
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670032.png" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/128/10091/10091605.png" alt="">
+                </div>
+
+                <div>
+                    <p style="margin: 83px;">or Sign Up Using</p>
+                    <!-- <br> -->
+                    <p style="position: relative; bottom: 68px;">SIGN UP</p>
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>

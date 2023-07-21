@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="stepformjsfile.js"></script>
+</head>
+<body>
+
+    <section>
+        <div class="container" id="signup">
+            <div class="formheader">
+                <div class="root" id="1id">1</div>
+                <div class="line123"></div>
+                
+                <div class="root" style="z-index: 1; background-color: gray;" id="2id">2</div>
+
+                <div class="line123"></div>
+                
+                <div class="root" style="background-color: gray;" id="3id">3</div>
+            </div>
+            <h4>SIGNUP INFO</h4>
+            <form id="emailpassword">
+                <div class="emailaddress">
+                    <label for="emailid">Email Address</label>
+                    <br>
+                    <input type="email" name="email" class="formdata" id="emailid" >
+                    <br>
+                    <span id="emailspan"></span>
+                </div>
+                 <br>
+                <div class="passwordsection">
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" name="password" class="formdata" id="paswd">
+                    <br>
+                    <span id="paswdspan"></span>
+                </div>
+                    <span id="emailandpaswd"></span>
+                <div>
+                    <button type="submit" class="but" id="signup" onclick="hides()">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="container" id="personal1">
+            <div class="formheader">
+                <div class="root" style="background-color: gray;">1</div>
+                <div class="line123"></div>
+                
+                <div class="root" style="z-index: 1;">2</div>
+
+                <div class="line123"></div>
+                
+                <div class="root" style="background-color: gray;">3</div>
+            </div>
+            <h4>PERSONAL INFORMATION</h4>
+            <form id="userfulllastdata">
+                <div class="personalinfo">
+                    <label for="user">User Name</label>
+                    <br>
+                    <input type="text" name="username" class="formdata" id="user">
+                    <br>
+                    <span id="userspan"></span>
+                </div>
+                 <br>
+                <div class="personalinfo">
+                    <label for="first">First Name</label>
+                    <br>
+                    <input type="text" name="firstname" class="formdata" id="first">
+                    <br>
+                    <span id="firstspan"></span>
+                </div>
+                <br>
+                <div class="personalinfo">
+                    <label for="last">Last Name</label>
+                    <br>
+                    <input type="text" name="lastname" class="formdata" id="last">
+                    <br>
+                    <span id="lastspan"></span>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="but1" onclick="shows()">Previous</button>
+                    <button type="submit" class="but2" onclick="hidep1()">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="container" id="personal2">
+            <div class="formheader">
+                <div class="root" style="background-color: gray;">1</div>
+                <div class="line123"></div>
+                
+                <div class="root" style="z-index: 1; background-color: grey;">2</div>
+
+                <div class="line123"></div>
+                
+                <div class="root">3</div>
+            </div>
+            <h4>PERSONAL INFORMATION</h4>
+            <form id="compexperdesig">
+                <div class="personalinfo">
+                    <label for="company">Current Company</label>
+                    <br>
+                    <input type="text" name="username" class="formdata" id="company">
+                    <br>
+                    <span id="companyspan"></span>
+                </div>
+                 <br>
+                <div class="personalinfo">
+                    <label for="experience">Total Experience</label>
+                    <br>
+                    <input type="text" name="firstname" class="formdata" id="experience">
+                    <br>
+                    <span id="experiencespan"></span>
+                </div>
+                <br>
+                <div class="personalinfo">
+                    <label for="designation">Designation</label>
+                    <br>
+                    <input type="text" name="lastname" class="formdata" id="designation">
+                    <br>
+                    <span id="designationspan"></span>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="but1" onclick="showp1()">Previous</button>
+                    <button type="submit" class="but2" onclick="submitpage()">Next</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container info" style="display: none;" id="showinfo">
+            <h2>Form Submited</h2>
+            <span id="formallinfo"></span>
+            <!-- <label for="emaildata">Email</label>
+            <input type="email" id="emaildata">
+            <br>
+            <label for="paswdata">Password</label>
+            <input type="password" id="paswdata">
+            <br>
+            <label for="userdata">User Name</label>
+            <input type="text" id="userdata">
+            <br>
+            <label for="firstdata">First Name</label>
+            <input type="text" id="firstdata">
+            <br>
+            <label for="lastdata">Last Name</label>
+            <input type="text" id="lastdata">
+            <br>
+            <label for="companydata">Current Company</label>
+            <input type="text" id="companydata">
+            <br>
+            <label for="experiencedata">Total Experience</label>
+            <input type="text" id="experiencedata">
+            <br>
+            <label for="designationdata">Designation</label>
+            <input type="text" id="designationdata"> -->
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,98 @@
+.formheader{
+    text-align: center;
+    background-color: #808080d0;
+    color: white;
+    height: 50px;
+    margin: 0 25rem;
+}
+section{
+    padding: 10px
+}
+label{
+    text-align: justify;
+}
+input{
+    border: none;
+    height: 30px;
+    width: 30%;
+}
+textarea{
+    border: none;
+}
+.formsection{
+    text-align: center;
+    background-color: #8080804d;;
+    height: 100%;
+    align-items: center;
+    margin: 0 25rem;
+}
+h1{
+    position: relative;
+    top: 10px;
+}
+.text{
+    margin: 10px;
+    position: relative;
+    left: 56px;
+}
+.birthdate{
+    position: relative;
+    right: 2px;
+}
+.datetime{
+    text-decoration: none;
+    position: relative;
+    bottom: 35px;
+}
+.sign{
+    position: relative;
+    bottom: 64px;
+    right: 10px;
+}
+.comm{
+    position: relative;
+    bottom: 74px;
+    right: 8px;
+}
+.addresss{
+    position: relative;
+    bottom: 74px;
+    left: 12px;
+}
+#email{
+    position: relative;
+    left: 67px;
+}
+#phone{
+    position: relative;
+    left: 67px;
+}
+#country{
+    position: relative;
+    left: 61px;
+}
+#address{
+    position: relative;
+    left: 37px;
+}
+#date{
+    position: relative;
+    left: 46px;
+}
+
+.submitButton{
+    background-color: blue;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    left: 21px;
+    border: 12px solid blue;
+    border-radius: 14px;
+}
+sub {
+    vertical-align: sub;
+    font-size: x-small;
+    position: relative;
+    left: 23px;
+    bottom: 13px;
+  }

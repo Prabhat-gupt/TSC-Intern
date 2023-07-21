@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="formdata.js"></script>
+</head>
+<body>
+    <section>
+        <div class="formheader">
+            <h1>Registraction Form</h1>
+        </div>
+    </section>
+    <section class="form">
+        <div class="formsection">
+            <form id="fillForm">
+            <label for="full" >Full Name</label>
+            <input id="Full" class="text" name="full" type="text">
+            <br>
+            <label for="last">Last Name</label>
+            <input id="last" class="text" name="last" type="text">
+            <br>
+            <label for="birth" class="birthdate">Birth Date</label>
+            <input id="birth" class="text" name="birth" type="text">
+            <br>
+            <sub>MM/DD/YYYY</sub>
+            <br>
+            <label for="email" style="position: relative; right: 15px;">E-mail</label>
+            <input id="email" class="text" name="email" type="email">
+            <br>
+            <label for="phone" style="position: relative; right: 16px;">Phone</label>
+            <input id="phone"class="text" name="phone" type="tel">
+            <br>
+            <label for="company" style="position: relative; right: 10px;">Company</label>
+            <input id="company" class="text" name="company" type="text">
+            <br>
+            <label for="country" style="position: relative; right: 15px;">Country</label>
+            <input id="country" class="text" name="country" type="text">
+            <br>
+            <label for="address" class="addresss">Mailing Address</label>
+            <textarea id="address" rows="5" cols="26" class="text" name="address" type="text"></textarea>
+            <br>
+            <label for="comment" class="comm">Comment</label>
+            <textarea id="comment" rows="5" cols="26" class="text" name="comment" type="text"></textarea>
+            <br>
+            <label for="date">Current Date</label>
+            <input id="date" class="text" name="data" type="text">  
+            <br>
+            <sub>MM/DD/YYYY</sub>
+            <!-- <h6 class="datetime">MM/DD/YYYY</h6> -->
+            <br>
+            <label for="signature" class="sign">Signature</label>
+            <textarea id="signature" rows="5" cols="26" class="text" name="sign" type="text"></textarea>
+            <br>
+
+            <button type="submit" value="submit" class="submitButton">Submit</button>
+
+        </form>
+        </div>
+    </section>
+</body>
+</html>
